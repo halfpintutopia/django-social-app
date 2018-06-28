@@ -1,0 +1,5 @@
+name: social-social-app
+dependencies:
+  - python=3.6
+  pip:
+    - django==2.0.6
