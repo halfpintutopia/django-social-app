@@ -1,0 +1,9 @@
+<h1>New post feed of {{ user.username }}</h1>
+<a href="{% url 'api:new_post' %}">Back</a>
+<ul>
+    {% for post in posts %}
+        <li>
+            {{ post.post }} | {{ post.created }}
+        </li>
+    {% endfor %}
+</ul>
